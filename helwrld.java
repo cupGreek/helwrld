@@ -7,21 +7,22 @@ import com.sun.net.httpserver.HttpServer;
 
 public class helwrld {
     public static void main(String[] args) throws Exception {
-        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
         server.createContext("/", new MyHandler());
         //Thread control is given to executor service.
         server.setExecutor(java.util.concurrent.Executors.newCachedThreadPool());
         server.start();
         System.out.println("Server started...awaiting requests");
     }
-  
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
-            String response = "Hello World! This is the thread: ";
+            String response = "<HTML>";
+            response += "<h1>" + "Hello World!" + "</h1>";
             long threadId = Thread.currentThread().getId();
             System.out.println("I am thread " + threadId );
-            response = response + "Thread Id = "+threadId;
+            response = response + "<h2>" + " This is the thread: Thread Id = "+threadId + "</h2>";
+            response += "</HTML>";
             t.sendResponseHeaders(200, response.length());
             OutputStream os = t.getResponseBody();
             os.write(response.getBytes());
