@@ -7,7 +7,7 @@ import com.sun.net.httpserver.HttpServer;
 
 public class helwrld {
     public static void main(String[] args) throws Exception {
-        HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
+        HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
         server.createContext("/", new MyHandler());
         //Thread control is given to executor service.
         server.setExecutor(java.util.concurrent.Executors.newCachedThreadPool());
