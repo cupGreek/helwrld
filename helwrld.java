@@ -16,7 +16,7 @@ public class helwrld {
         System.out.println("Server started.....awaiting requests");
     }
     
-    // Testing Trigger
+    // Trigger Test
         
     static class MyHandler implements HttpHandler {
         @Override
