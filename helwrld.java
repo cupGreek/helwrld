@@ -15,7 +15,8 @@ public class helwrld {
         server.start();
         System.out.println("Server started.....awaiting requests");
     }
-        
+    
+    // HTTP Handler
     static class MyHandler implements HttpHandler {
         @Override
         public void handle(HttpExchange t) throws IOException {
