@@ -15,8 +15,6 @@ public class helwrld {
         server.start();
         System.out.println("Server started.....awaiting requests");
     }
-    
-    // Testing Harness Trigger
 
     // HTTP Handler
     static class MyHandler implements HttpHandler {
