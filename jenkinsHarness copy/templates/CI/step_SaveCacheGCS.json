@@ -1,0 +1,16 @@
+{
+    "step": {
+        "type": "SaveCacheGCS",
+        "name": "Push to GCS Repository-1",
+        "identifier": "SaveCachetoGCS1",
+        "spec": {
+            "connectorRef": "demo",
+            "bucket": "",
+            "key": "",
+            "sourcePaths": [
+                ""
+            ],
+            "archiveFormat": "Tar"
+        }
+    }
+}

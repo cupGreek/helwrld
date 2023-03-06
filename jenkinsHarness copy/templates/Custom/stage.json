@@ -1,0 +1,14 @@
+{
+    "stage": {
+        "name": "Notification",
+        "identifier": "Custom_stage",
+        "description": "",
+        "type": "Custom",
+        "spec": {
+            "execution": {
+                "steps": []
+            }
+        },
+        "tags": {}
+    }
+}

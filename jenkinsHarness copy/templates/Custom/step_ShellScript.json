@@ -1,0 +1,20 @@
+{
+    "step": {
+        "type": "ShellScript",
+        "name": "ShellScript-1",
+        "identifier": "ShellScript1",
+        "spec": {
+            "shell": "Bash",
+            "onDelegate": true,
+            "source": {
+                "type": "Inline",
+                "spec": {
+                    "script": "echo \"Hello World!\""
+                }
+            },
+            "environmentVariables": [],
+            "outputVariables": []
+        },
+        "timeout": "10m"
+    }
+}

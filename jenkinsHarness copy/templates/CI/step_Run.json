@@ -1,0 +1,11 @@
+{
+    "step": {
+        "type": "Run",
+        "name": "Compile-1",
+        "identifier": "Run1",
+        "spec": {
+            "shell": "Bash",
+            "command": "ls"
+        }
+    }
+}

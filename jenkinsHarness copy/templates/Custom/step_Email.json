@@ -1,0 +1,14 @@
+{
+    "step": {
+        "type": "Email",
+        "name": "Email-1",
+        "identifier": "Email1",
+        "spec": {
+            "to": "",
+            "cc": "",
+            "subject": "Jenkins Mail Feature",
+            "body": "Testing Jenkins Mail Feature"
+        },
+        "timeout": "1d"
+    }
+}

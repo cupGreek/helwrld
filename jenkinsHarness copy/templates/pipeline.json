@@ -1,0 +1,11 @@
+{
+    "pipeline": {
+        "name": "demo",
+        "identifier": "demo",
+        "projectIdentifier": "default_project",
+        "orgIdentifier": "default",
+        "tags": {},
+        "stages": [],
+        "delegateSelectors": ["demo"]        
+    }
+}

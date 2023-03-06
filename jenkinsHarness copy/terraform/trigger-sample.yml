@@ -1,0 +1,30 @@
+trigger:
+  name: "name"
+  identifier: "identifier"
+  enabled: true
+  description: ""
+  tags: {}
+  projectIdentifier: "default_project"
+  orgIdentifier: "default"
+  pipelineIdentifier: "demo"
+  source:
+    type: "Webhook"
+    spec:
+      type: "Github"
+      spec:
+        type: "Push"
+        spec:
+          connectorRef: "gitconnect"
+          autoAbortPreviousExecutions: false
+          payloadConditions:
+          - key: "changedFiles"
+            operator: "Equals"
+            value: "helwrld.java"
+          - key: "targetBranch"
+            operator: "Equals"
+            value: "main"
+          headerConditions: []
+          repoName: "helWrld"
+          actions: []
+  pipelineBranchName: <+trigger.branch>
+  inputYaml: "pipeline: {}\n"
