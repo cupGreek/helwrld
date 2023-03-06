@@ -1,2 +1,0 @@
-java -jar jenkins-cli.jar -s http://localhost:8080/ -auth admin:$1 -webSocket create-job demo < $2 
-echo $(java -jar jenkins-cli.jar -s http://localhost:8080/ -auth admin:$1 -webSocket build demo -s | grep SUCCESS)
